@@ -1,4 +1,4 @@
-# Continual Generation and Coordination, Multi-agent Compatible Policy Learning via Incompatible Team Evolution
+# Learning to Coordinate with Anyone
 
 This repository contains official implementation for Learning to Coordinate with Anyone.
 
