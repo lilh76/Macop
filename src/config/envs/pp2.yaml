@@ -1,0 +1,11 @@
+env: "gymma"
+
+env_args:
+  key: "mpe:SimpleTagHeuristic-v0"
+  time_limit: 25
+  pretrained_wrapper: Heuristic
+
+n_ego: 1
+t_train_tm: 500000
+t_train_ego: 600000
+min_iteration: 4

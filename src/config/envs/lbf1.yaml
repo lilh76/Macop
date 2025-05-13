@@ -1,0 +1,11 @@
+env: "gymma"
+
+env_args:
+  key: "lbforaging:Foraging-5x5-2p-1f-coop-close-2-v1"
+  time_limit: 25
+  pretrained_wrapper: null
+
+n_ego: 1
+t_train_tm: 500000
+t_train_ego: 500000
+min_iteration: 4

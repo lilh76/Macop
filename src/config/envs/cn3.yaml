@@ -1,0 +1,11 @@
+env: "gymma"
+
+env_args:
+  key: "mpe:SimpleSpread3-v0"
+  time_limit: 25
+  pretrained_wrapper: null
+
+n_ego: 2
+t_train_tm: 500000
+t_train_ego: 500000
+min_iteration: 4
