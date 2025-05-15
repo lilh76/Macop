@@ -30,6 +30,6 @@ learner_tm: "q_learner_tm"
 n_population: 2
 xp_coef: 0.1
 diversity_coef: 0.1
-mgco3_threshold: 0.0
+macop_threshold: 0.0
 reg_coef: 10
 name: "qmix"

@@ -381,7 +381,7 @@ def run_sequential(args, logger):
 
             ## head expansion mechanism, decide if the new trained head should be saved
             tm2head_id = get_head_id(args, tm_id_train_ego, iter, iter_plus_tm_2_head_id)
-            logger.console_logger.info("Start MGCO3 expand head")
+            logger.console_logger.info("Start Macop expand head")
             # log performance based on the mac
             all_head_log_info = {head_id: [] for head_id in all_head_id_list + [None]}
             # for tm, mac in tm2mac.items():
@@ -402,7 +402,7 @@ def run_sequential(args, logger):
             # determine whether to save the new head
             
             if (head_id == -1) or \
-                    (new_head_return - maximum_past_head_return) / (np.abs(maximum_past_head_return) + 1e-3) > args.mgco3_threshold: # > 0
+                    (new_head_return - maximum_past_head_return) / (np.abs(maximum_past_head_return) + 1e-3) > args.macop_threshold: # > 0
                 # cache directly
                 logger.console_logger.info("Expand New Head {}, new head return: {}, maximum past head return: {}".format(tm2head_id, new_head_return, maximum_past_head_return))
                 iter_plus_tm_2_head_id[(iter, tm_id_train_ego)] = tm2head_id

@@ -84,6 +84,7 @@ class BasicMAC:
 
     def reset_param(self):
         self.agent.reset_param()
+
     def _build_agents(self, input_shape):
         self.agent = agent_REGISTRY[self.args.agent](input_shape, self.args)
 
